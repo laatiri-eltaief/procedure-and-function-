@@ -1,0 +1,29 @@
+FUNCTION dot product(v1,v2:ARRAY_OF integer[n]) : integer;
+VAR
+    i:integer;
+    product:integer;
+BEGIN
+
+   FOR i FROM 0 TO n-1 STEP  1 DO
+        ps:=v1[i]*v2[j];
+    END_FOR
+  write ps;
+   END
+   ALGORITHM orthogonal
+   VAR
+    i,j:integer;
+    v1,v2:ARRAY_OF integer;
+    arr:ARRAY_OF integer;
+    
+BEGIN
+FOR i FROM 0 TO n STEP 1 DO
+    read arr[n]
+    FOR i FROM 0 TO arr.length-1 STEP 1  DO
+     FOR j FROM i+1 TO arr.length-1 STEP 1  DO
+     ps:=dot product(arr[i],arr[j])
+       IF return ("The vectors",arr[i],arr[j] ,"are  orthogonal")
+   END_IF
+END_FOR
+    END_FOR
+    END_FOR
+END
